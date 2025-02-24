@@ -30,8 +30,6 @@ zip_file_path = os.path.join(script_dir , "MoNuSeg.zip")
 download_url = "https://github.com/juglab/EmbedSeg/releases/download/v0.1.0/monuseg-2018.zip"
 download_and_extract(download_url, zip_file_path)
 
-pannuke_dir = "/datasets/AZ_Workshop/data/PanNuke"
-
 for fold in ["1", "2"]:
     zip_file_path = os.path.join(script_dir, "PanNuke_fold_{}.zip".format(fold))
     download_url = "https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke/fold_{}.zip".format(fold)
